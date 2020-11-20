@@ -1,0 +1,24 @@
+{
+  "name": "js-td-p6-static-node-js-and-express-site",
+  "version": "1.0.0",
+  "description": "Portfolio Site",
+  "main": "app.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmaletto1/JS-TD-P6-Static-Node-js-And-Express-Site.git"
+  },
+  "author": "Johnny Austen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmaletto1/JS-TD-P6-Static-Node-js-And-Express-Site/issues"
+  },
+  "homepage": "https://github.com/jmaletto1/JS-TD-P6-Static-Node-js-And-Express-Site#readme",
+  "dependencies": {
+    "express": "^6.14.8",
+    "nodemon": "^2.0.6",
+    "pug": "^6.14.8"
+  }
+}
