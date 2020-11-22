@@ -57,6 +57,8 @@ app.use((req, res, next) => {
     next(err);
   });
   
+  // Global Error Handler
+
   app.use((err, req, res, next) => {
     res.locals.error = err;
     const status = err.status || 500;
@@ -64,7 +66,6 @@ app.use((req, res, next) => {
     res.render('./error', err);
   });
 
-// Global Error Handler
 
 // Start the server
 app.listen(3000, () => {
