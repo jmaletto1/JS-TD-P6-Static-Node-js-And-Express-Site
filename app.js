@@ -51,13 +51,15 @@ app.get('/projects/', (req, res) => {
     res.redirect('/');
 });
 
+// 404 Handler Error
+
 app.use((req, res, next) => {
     const err = new Error("This is not the page you're looking for! Please visit our homepage, and try again.");
     err.status = 404;
     next(err);
   });
   
-  // Global Error Handler
+// Global Error Handler
 
   app.use((err, req, res, next) => {
     res.locals.error = err;
