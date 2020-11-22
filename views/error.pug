@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Return To The Homepage
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-6.medium-9.large-9
+
+        if locals.error.message
+          h3= error.message
+        else  
+          h3 I'm afraid you've reached a page that doesn't exist!
+        img(src="./static/images/404.png" width="65%")

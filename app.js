@@ -21,6 +21,15 @@ app.get('/about', (req, res) => {
     res.render('about');
 })
 
+app.get('/error', (req, res) => {
+    res.render('error');
+})
+
+app.get('/not-found', (req, res) => {
+    res.render('not-found');
+})
+
+
 // Set the dynamic routes.
 app.get('/projects/:id', (req, res) => {
     const id = req.params.id;
@@ -31,7 +40,9 @@ app.get('/projects/:id', (req, res) => {
         console.log("Error!!!");
         const err = new Error("That project doesn't exist yet!");
         err.status = 404;
-        res.redirect('/');
+        res.locals.err = err;
+        // next(err);
+        res.redirect('/not-found');
     }
 })
 
@@ -39,6 +50,19 @@ app.get('/projects/:id', (req, res) => {
 app.get('/projects/', (req, res) => {
     res.redirect('/');
 });
+
+app.use((req, res, next) => {
+    const err = new Error("This is not the page you're looking for! Please visit our homepage, and try again.");
+    err.status = 404;
+    next(err);
+  });
+  
+  app.use((err, req, res, next) => {
+    res.locals.error = err;
+    const status = err.status || 500;
+    res.status(status);
+    res.render('./error', err);
+  });
 
 // Global Error Handler
 
