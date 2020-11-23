@@ -7,16 +7,16 @@ block content
     .grid-x
       .cell.small-6.medium-9.large-9
 
-        //- Use interpolation to dynamically add the project title.
+        //- Project Title
         h1= `${projectData.project_name}`
 
-        //- Use interpolation to dynamically add the project description.
+        //- Project Description
         p.lead.text-light= `${projectData.description}`
 
       .cell.portfolio-meta.small-6.medium-2.large-3
         h6 Technologies
 
-        //- Use an `each` iterator to replace the li tags below and interpolation to dynamically add the technologies used in each project.
+        //- Use of Pug's "each" iterator to display each project technology.
         ul
           each val in projectData.technologies
             li #{val}

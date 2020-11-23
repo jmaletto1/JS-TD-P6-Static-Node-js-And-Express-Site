@@ -14,26 +14,28 @@ html(class="no-js" lang="en" dir="ltr")
         block sidebar
           br
           .cell.shrink
-            img.thumbnail(src='https://placehold.it/550x350')
+            img.thumbnail(src='/static/images/johnnyausten.jpg')
           .cell.auto
 
-            //- Add your name here.
-            h5 Name
+            //- Name Header
+            h5 Johnny Austen
 
-            //- Add text here to describe who you are, what you do, and why you are so awesome.
+            //- Short Bio
             p.text-light
-              | Description
+              | Welcome to my portfolio! I am a Full Stack Javascript Developer, based in East Finchley, North London.
+              | I'm 30 years old, passionate about tech and a keen runner. I also play bass, run a part-time events business
+              | and live with a cat called Holly!
 
-            //- Add about page route to the href below. 
-            a(href='/about') Learn More →
+            //- About Route/Link 
+            a(href='/about') About Me →
 
     .off-canvas-content(data-off-canvas-content='')
       .title-bar.hide-for-large
         .title-bar-left
           button.menu-icon(type='button', data-toggle='my-info')
 
-          //- Add your name here.  This is for the mobile screen sized version.
-          span.title-bar-title Name
+          //- Name for Mobile Site.
+          span.title-bar-title Johnny Austen
       block content
         
 

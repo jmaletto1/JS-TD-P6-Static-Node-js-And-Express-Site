@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,p{
   }
 
   p{
-    font-size: 15px;
+    font-size: 13.5px;
     color: #666;
   }
 
@@ -58,20 +58,20 @@ a:hover{
 
 .portfolio-me{
   padding: 20px;
-  background: #121213;
+  background: #523b50;
   color: #fff;
   box-shadow: none !important;
 }
 
   .portfolio-me p{
     font-size: 14px;
-    color: #999;
+    color: rgb(197, 194, 194);
   }
 
   .portfolio-me a{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Futura', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    color: #555;
+    color: rgb(134, 134, 134);
     font-size: 13px;
     letter-spacing: 2.5px;
     -webkit-text-transform: uppercase;

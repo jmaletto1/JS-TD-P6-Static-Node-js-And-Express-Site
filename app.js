@@ -1,10 +1,11 @@
-const e = require('express');
+// Set initial express requirements and App Declarations.
 const express = require('express');
 const app = express();
 
+// Import project data from data.json
 const data = require('./data.json').projects;
 
-// app.set('views', path.join(__dirname, 'views'));
+// Set the view engine to pug (to render pug template)
 app.set('view engine', 'pug');
 
 // Set static middleware for serving static files
@@ -21,53 +22,48 @@ app.get('/about', (req, res) => {
     res.render('about');
 })
 
+// Set the 'Error' Route
 app.get('/error', (req, res) => {
     res.render('error');
 })
 
-app.get('/not-found', (req, res) => {
-    res.render('not-found');
+// Set the 'Page Not Found' Route
+app.get('/page-not-found', (req, res) => {
+    res.render('page-not-found');
 })
 
-
-// Set the dynamic routes.
+// // Set the Dynamic Project routes.
 app.get('/projects/:id', (req, res) => {
     const id = req.params.id;
     const projectData = data[id];
     if (projectData) {
     res.render('project', {id, projectData});
     } else {
-        console.log("Error!!!");
-        const err = new Error("That project doesn't exist yet!");
-        err.status = 404;
-        res.locals.err = err;
-        // next(err);
-        res.redirect('/not-found');
-    }
-})
-
-// Redirect if no ID is supplied.
-app.get('/projects/', (req, res) => {
-    res.redirect('/');
-});
+            res.redirect('/404-redirect');
+        }
+    });
 
 // 404 Handler Error
-
 app.use((req, res, next) => {
     const err = new Error("This is not the page you're looking for! Please visit our homepage, and try again.");
     err.status = 404;
     next(err);
   });
   
-// Global Error Handler
-
+/* Global Error Handler.
+Errors that are not 404s are passed to the 'error' template.
+*/
   app.use((err, req, res, next) => {
     res.locals.error = err;
-    const status = err.status || 500;
-    res.status(status);
-    res.render('./error', err);
+    if (err.status === 404) {
+        res.locals.message = 'Not found!';
+        res.status(404).render('page-not-found', { err });
+    } else {
+        err.message = `Oops!  It looks like something went wrong on the server.`;
+        err.status = 500 || err.status;
+        res.status(500).render('error', { err });
+    }
   });
-
 
 // Start the server
 app.listen(3000, () => {

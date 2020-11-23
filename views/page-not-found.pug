@@ -7,6 +7,7 @@ block content
     .grid-x
       .cell.small-6.medium-9.large-9
 
-        //- Add your name.
-        h3 I'm afraid this project doesn't exist just yet!
-        img(src="static/images/not-found.jpg")
+        //- Display Error Message & Status
+        h3= error.message
+          p= error.status
+        img(src="/static/images/404.png" width="65%")

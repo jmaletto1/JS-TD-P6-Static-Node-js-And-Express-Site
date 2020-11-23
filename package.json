@@ -4,7 +4,7 @@
   "description": "Portfolio Site",
   "main": "app.js",
   "scripts": {
-    "test": "start"
+    "start": "npx nodemon"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/jmaletto1/JS-TD-P6-Static-Node-js-And-Express-Site#readme",
   "dependencies": {
-    "express": "^6.14.8",
+    "express": "^4.17.1",
     "nodemon": "^2.0.6",
-    "pug": "^6.14.8"
+    "pug": "^3.0.0"
   }
 }
