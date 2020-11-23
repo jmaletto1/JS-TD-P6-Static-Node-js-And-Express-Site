@@ -56,9 +56,11 @@ Errors that are not 404s are passed to the 'error' template.
   app.use((err, req, res, next) => {
     res.locals.error = err;
     if (err.status === 404) {
+        console.log("Unfortunately this link is not valid! Please return to the homepage.")
         res.locals.message = 'Not found!';
         res.status(404).render('page-not-found', { err });
     } else {
+        console.log("Unfortunately this link is not valid! Please return to the homepage.")
         err.message = `Oops!  It looks like something went wrong on the server.`;
         err.status = 500 || err.status;
         res.status(500).render('error', { err });
