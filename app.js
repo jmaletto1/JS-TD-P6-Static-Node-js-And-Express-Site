@@ -1,6 +1,7 @@
 // Set initial express requirements and App Declarations.
 const express = require('express');
 const app = express();
+app.set('port', process.env.PORT || 3000);
 
 // Import project data from data.json
 const data = require('./data.json').projects;
@@ -77,7 +78,6 @@ Errors that are not 404s are passed to the 'error' template.
 //     console.log('The app is running on localhost:3000!')
 // });
 
-app.set('port', process.env.PORT || 3000);
 app.listen(process.env.PORT || '3000');
 
 // http.createServer(function(request, response) {
