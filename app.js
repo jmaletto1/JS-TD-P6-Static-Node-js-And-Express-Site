@@ -5,9 +5,6 @@ const app = express();
 // Import project data from data.json
 const data = require('./data.json').projects;
 
-// Set Heroku Variables
-const PORT = process.env.port;
-
 // Set the view engine to pug (to render pug template)
 app.set('view engine', 'pug');
 
@@ -75,4 +72,4 @@ Errors that are not 404s are passed to the 'error' template.
 //     console.log('The app is running on localhost:3000!')
 // });
 
-app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+app.listen(process.env.PORT || 5000)
