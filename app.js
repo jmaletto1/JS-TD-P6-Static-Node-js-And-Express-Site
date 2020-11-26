@@ -7,9 +7,9 @@ const app = express();
 const data = require('./data.json').projects;
 
 // Set Heroku Variables
-var http = require('http');
+// var http = require('http');
 // var hostname = '127.0.0.1';
-var port = process.env.port || 1337;
+var port = process.env.port || 8080;
 
 // Set the view engine to pug (to render pug template)
 app.set('view engine', 'pug');
@@ -78,11 +78,12 @@ Errors that are not 404s are passed to the 'error' template.
 //     console.log('The app is running on localhost:3000!')
 // });
 
-// app.listen(process.env.PORT || '3000');
-
-http.createServer(function(request, response) {
-    response.writeHead(200, { 'Content-Type': 'text/plain'});
-    response.end('Hello World\n');
-}).listen(port, function() {
-    console.log("Server running at http://oursite:" + port + "/");
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
 });
+// http.createServer(function(request, response) {
+//     response.writeHead(200, { 'Content-Type': 'text/plain'});
+//     response.end('Hello World\n');
+// }).listen(port, function() {
+//     console.log("Server running at http://oursite:" + port + "/");
+// });
