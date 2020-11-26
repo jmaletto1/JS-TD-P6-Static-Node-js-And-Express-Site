@@ -1,16 +1,12 @@
 // Set initial express requirements and App Declarations.
 const express = require('express');
 const app = express();
-// app.set('port', process.env.PORT || 3000);
 
 // Import project data from data.json
 const data = require('./data.json').projects;
 
 // Set Heroku Variables
-// var http = require('http');
-// var hostname = '127.0.0.1';
-const path = require('path');
-const PORT = process.env.port || 5000;
+const PORT = process.env.port;
 
 // Set the view engine to pug (to render pug template)
 app.set('view engine', 'pug');
