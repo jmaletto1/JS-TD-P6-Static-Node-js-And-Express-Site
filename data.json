@@ -58,6 +58,17 @@
 				"/static/images/public-api-requests-search-results-1200.jpg",
 				"/static/images/public-api-requests-550.jpg"
 			]
+		},
+		{
+			"id": 5,
+			"project_name": "React Gallery App",
+			"description": "This lightweight and easy-to-use gallery application makes use of React to pull images from Flickr's Public API. The app provides 3 default search routes - Cats, Dogs & Gorillas. In addtion, users can search for a query of their choosing. In the event that a match is not found, the user is provided with a 'Not Found' message, and encouraged to search again!",
+			"technologies": ["React", "Asynchronous Programming", "Basic Javascript", "CSS & DOM Manipulation"],
+			"live_link": "https://react-gallery-app-johnny-a.herokuapp.com/",
+			"github_link": "https://github.com/jmaletto1/JS-TD-P5-Public-API-Requests",
+			"image_urls": ["/static/images/react-gallery-1200.jpg",
+				"/static/images/react-gallery-500.jpg"
+			]
 		}
 	]
 }
