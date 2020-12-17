@@ -2,6 +2,15 @@
 	"projects": [
 		{
 			"id": 0,
+			"project_name": "Virtual Library App - Powered by Sequelize",
+			"description": "This app makes use of Express, Sequelize & Node.js to pull book records from a database and display them in a list format. When the user visits the homepage, they are re-directed to the first page of results. Each page displays up to 5 results, and users can navigate between the pages by clicking the pagination buttons at the bottom of the window. Users may also search for results. The search method is case-insensitve, and will also return partial matches. User's search queries will be matched against the Title, Author, Genre and Year (of release) fields. If a book is not listed in the database, clients are welcome to submit their own entries. If the 'Title' or 'Author' fields are left blank, Sequelize will prevent the form from being submitted, and display a custom error message notifing the user of their mistake. Finally, users may also update any current entries listed in the library. As before, the same validation methods will be in place on the 'Title' and 'Author' fields, to ensure they are not left empty.",
+			"technologies": ["Sequelize", "Express", "Node.JS", "Asynchronous Javascript"],
+			"live_link": "https://sql-library-manager-ja.herokuapp.com/",
+			"github_link": "https://github.com/jmaletto1/JS-TD-P8-SQL-Library-Manager",
+			"image_urls": ["/static/images/sql-library-1200.jpg", "/static/images/sql-library-550.jpg", "/static/images/sql-library-search-550.jpg"]
+		},
+		{
+			"id": 1,
 			"project_name": "React Gallery App",
 			"description": "This lightweight and easy-to-use gallery application makes use of React to pull images from Flickr's Public API. The app provides 3 default search routes - Cats, Dogs & Gorillas. In addtion, users can search for a query of their choosing. In the event that a match is not found, the user is provided with a 'Not Found' message, and encouraged to search again!",
 			"technologies": ["React", "Asynchronous Programming", "Basic Javascript", "CSS & DOM Manipulation"],
@@ -12,7 +21,7 @@
 			]
 		},
 		{
-			"id": 1,
+			"id": 2,
 			"project_name": "Public API Requests Gallery",
 			"description": "Many immensely popular sites, such as IMDB, Facebook & Twitter, provide data that can be displayed on external websites via the use of APIs. This project makes use of a public API to display 9 randomly selected users on to a webpage. The program allows you to search through the selected profiles, and launch a modal view of each user, by clicking directly on it’s thumbnail. This modal window provides far more detail on the selected user. From the modal window, the user can either close the window, or scroll backwards/forwards through the results.",
 			"technologies": ["Asynchronous Programming", "Promises", "jQuery", "Basic Javascript", "CSS & DOM Manipulation"],
@@ -24,7 +33,7 @@
 			]
 		},
 		{
-			"id": 2,
+			"id": 3,
 			"project_name": "OOP Game Show App",
 			"description": "This fun “Phrase Hunters” game is a stylish, Javascript-based version of the classic Hangman game. The game selects a phrase at random, and displays the characters behind covered placeholders. Users can then either type or click the letters on the on-screen keyboard to make their selection. If correct, the relevant letters are revealed on the board, and the chosen letter is blocked from being re-used. If incorrect, the player loses a life. The player either completes the phrase before using 5 lives, resulting in a win, or loses if all 5 lives expire.",
 			"technologies": ["Object-Oriented Javascript", "jQuery", "Basic Javascript", "CSS & DOM Manipulation"],
@@ -37,7 +46,7 @@
 			]
 		},
 		{
-			"id": 3,
+			"id": 4,
 			"project_name": "Interactive Conference Registration Form",
 			"description": "This interactive form makes full use of Javascript & DOM manipulation to allow a user to sign up for an imaginary conference. The form makes use of the preventDefault() function to stop the user submitting the form unless all of the necessary fields have been submitted. It also performs checks on the Name, Email and Credit Card sections to ensure that the provided data is valid. The activities section provides a total cost of how many activities the user has signed up for, and prevents them from signing up for any breakout sessions that clash. The form also displays a more streamlined version if the client has Javascript disabled.",
 			"technologies": ["Basic Javascript", "jQuery", "CSS & DOM Manipulation", "HTML Form Elements"],
@@ -49,7 +58,7 @@
 			]
 		},
 		{
-			"id": 4,
+			"id": 5,
 			"project_name": "Data Pagination and Filtering Gallery",
 			"description": "Displaying large amounts of data, such as hundreds of user profiles, can easily overwhelm a user, which will most likely end up in them leaving the page. In this project, I have created a data pagination system that displays 9 users on a page, and displays a page navigation system at the bottom of the page, allowing users to traverse through the results set without being overwhelmed. This project also makes use of a search function, allowing users to find a specific result (or set of results) without having to crawl through each page.",
 			"technologies": ["Basic Javascript", "CSS & DOM Manipulation"],
@@ -61,7 +70,7 @@
 			]
 		},
 		{
-			"id": 5,
+			"id": 6,
 			"project_name": "Random Quote Generator",
 			"description": "This program uses a range of Javascript syntax and data structures to build a Random Quote Generator. This program randomly displays a quote each time the user clicks a button, or after 5 seconds have passed.",
 			"technologies": ["Basic Javascript", "CSS & DOM Manipulation"],
