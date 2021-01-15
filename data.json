@@ -1,84 +1,141 @@
 {
-	"projects": [
-		{
-			"id": 0,
-			"project_name": "Virtual Library App - Powered by Sequelize",
-			"description": "This app makes use of Express, Sequelize & Node.js to pull book records from a database and display them in a list format. When the user visits the homepage, they are re-directed to the first page of results. Each page displays up to 5 results, and users can navigate between the pages by clicking the pagination buttons at the bottom of the window. Users may also search for results. The search method is case-insensitve, and will also return partial matches. User's search queries will be matched against the Title, Author, Genre and Year (of release) fields. If a book is not listed in the database, clients are welcome to submit their own entries. If the 'Title' or 'Author' fields are left blank, Sequelize will prevent the form from being submitted, and display a custom error message notifing the user of their mistake. Finally, users may also update any current entries listed in the library. As before, the same validation methods will be in place on the 'Title' and 'Author' fields, to ensure they are not left empty.",
-			"technologies": ["Sequelize", "Express", "Node.JS", "Asynchronous Javascript"],
-			"live_link": "https://sql-library-manager-ja.herokuapp.com/",
-			"github_link": "https://github.com/jmaletto1/JS-TD-P8-SQL-Library-Manager",
-			"image_urls": ["/static/images/sql-library-1200.jpg", "/static/images/sql-library-550.jpg", "/static/images/sql-library-search-550.jpg"]
-		},
-		{
-			"id": 1,
-			"project_name": "React Gallery App",
-			"description": "This lightweight and easy-to-use gallery application makes use of React to pull images from Flickr's Public API. The app provides 3 default search routes - Cats, Dogs & Gorillas. In addtion, users can search for a query of their choosing. In the event that a match is not found, the user is provided with a 'Not Found' message, and encouraged to search again!",
-			"technologies": ["React", "Asynchronous Programming", "Basic Javascript", "CSS & DOM Manipulation"],
-			"live_link": "https://react-gallery-app-johnny-a.herokuapp.com/",
-			"github_link": "https://github.com/jmaletto1/JS-TD-7-React-Gallery-App/tree/main/react-gallery",
-			"image_urls": ["/static/images/react-gallery-1200.jpg",
-				"/static/images/react-gallery-500.jpg"
-			]
-		},
-		{
-			"id": 2,
-			"project_name": "Public API Requests Gallery",
-			"description": "Many immensely popular sites, such as IMDB, Facebook & Twitter, provide data that can be displayed on external websites via the use of APIs. This project makes use of a public API to display 9 randomly selected users on to a webpage. The program allows you to search through the selected profiles, and launch a modal view of each user, by clicking directly on it’s thumbnail. This modal window provides far more detail on the selected user. From the modal window, the user can either close the window, or scroll backwards/forwards through the results.",
-			"technologies": ["Asynchronous Programming", "Promises", "jQuery", "Basic Javascript", "CSS & DOM Manipulation"],
-			"live_link": "http://theruntrepreneur.co.uk/js/public-api/",
-			"github_link": "https://github.com/jmaletto1/JS-TD-P5-Public-API-Requests",
-			"image_urls": ["/static/images/public-api-requests-1200.jpg",
-				"/static/images/public-api-requests-search-results-1200.jpg",
-				"/static/images/public-api-requests-550.jpg"
-			]
-		},
-		{
-			"id": 3,
-			"project_name": "OOP Game Show App",
-			"description": "This fun “Phrase Hunters” game is a stylish, Javascript-based version of the classic Hangman game. The game selects a phrase at random, and displays the characters behind covered placeholders. Users can then either type or click the letters on the on-screen keyboard to make their selection. If correct, the relevant letters are revealed on the board, and the chosen letter is blocked from being re-used. If incorrect, the player loses a life. The player either completes the phrase before using 5 lives, resulting in a win, or loses if all 5 lives expire.",
-			"technologies": ["Object-Oriented Javascript", "jQuery", "Basic Javascript", "CSS & DOM Manipulation"],
-			"live_link": "http://theruntrepreneur.co.uk/js/game-show-app/",
-			"github_link": "https://github.com/jmaletto1/JS-TD-P4-OOP-Game-Show-App",
-			"image_urls": ["/static/images/phrase-hunter-1200.jpg",
-				"/static/images/phrase-hunter-in-play-1200.jpg",
-				"/static/images/phrase-hunter-win-550.jpg",
-				"/static/images/phrase-hunter-lose-550.jpg"
-			]
-		},
-		{
-			"id": 4,
-			"project_name": "Interactive Conference Registration Form",
-			"description": "This interactive form makes full use of Javascript & DOM manipulation to allow a user to sign up for an imaginary conference. The form makes use of the preventDefault() function to stop the user submitting the form unless all of the necessary fields have been submitted. It also performs checks on the Name, Email and Credit Card sections to ensure that the provided data is valid. The activities section provides a total cost of how many activities the user has signed up for, and prevents them from signing up for any breakout sessions that clash. The form also displays a more streamlined version if the client has Javascript disabled.",
-			"technologies": ["Basic Javascript", "jQuery", "CSS & DOM Manipulation", "HTML Form Elements"],
-			"live_link": "http://theruntrepreneur.co.uk/js/interactive-form/",
-			"github_link": "https://github.com/jmaletto1/JS-TD-P3-Interactive-Form",
-			"image_urls": ["/static/images/interactive-form-1200.jpg",
-				"/static/images/interactive-form-550.jpg",
-				"/static/images/interactive-form-responses-550.jpg"
-			]
-		},
-		{
-			"id": 5,
-			"project_name": "Data Pagination and Filtering Gallery",
-			"description": "Displaying large amounts of data, such as hundreds of user profiles, can easily overwhelm a user, which will most likely end up in them leaving the page. In this project, I have created a data pagination system that displays 9 users on a page, and displays a page navigation system at the bottom of the page, allowing users to traverse through the results set without being overwhelmed. This project also makes use of a search function, allowing users to find a specific result (or set of results) without having to crawl through each page.",
-			"technologies": ["Basic Javascript", "CSS & DOM Manipulation"],
-			"live_link": "http://theruntrepreneur.co.uk/js/data-pagination/",
-			"github_link": "https://github.com/jmaletto1/JS-TD-P2-Data-Pagination",
-			"image_urls": ["/static/images/data-pagination-1200.jpg",
-				"/static/images/data-pagination-searches-1200.jpg",
-				"/static/images/data-pagination-550.jpg"
-			]
-		},
-		{
-			"id": 6,
-			"project_name": "Random Quote Generator",
-			"description": "This program uses a range of Javascript syntax and data structures to build a Random Quote Generator. This program randomly displays a quote each time the user clicks a button, or after 5 seconds have passed.",
-			"technologies": ["Basic Javascript", "CSS & DOM Manipulation"],
-			"live_link": "http://theruntrepreneur.co.uk/js/random-quote-generator/",
-			"github_link": "https://github.com/jmaletto1/JS-TD-P1---Random-Quote-Generator",
-			"image_urls": ["/static/images/random-quote-generator-1200.jpg",
-				"/static/images/random-quote-generator-550.jpg"
-			]
-		}
-	]
+  "projects": [
+    {
+      "id": 0,
+      "project_name": "Full Stack Courses App / REST API",
+      "description": "In this project, I have used the popular Javascript library React to create a client for a school database REST API (that I created in a previous project). This project allows users to view a list of all of the courses held in the API, and view all of the details for each course. Users may also register an account, or sign in with an existing account, to create, update and delete existing courses. I have also implemented a number of validation methods to ensure that users cannot update or delete projects that do not belong to them.",
+      "technologies": [
+        "React",
+        "Express",
+        "Sequelize",
+        "Node.js",
+        "Javascript"
+      ],
+      "live_link": "https://full-stack-courses-app.herokuapp.com/",
+      "github_link": "https://github.com/jmaletto1/JS-TD-P10-Full-Stack-React-App",
+      "image_urls": [
+        "/static/images/fullstack-courses-homepage-1200.jpg",
+        "/static/images/fullstack-course-detail-1200.png",
+        "/static/images/fullstack-create-course-1200.png",
+        "/static/images/fullstack-user-sign-in.png",
+        "/static/images/fullstack-user-sign-up.png"
+      ]
+    },
+    {
+      "id": 1,
+      "project_name": "Virtual Library App - Powered by Sequelize",
+      "description": "This app makes use of Express, Sequelize & Node.js to pull book records from a database and display them in a list format. When the user visits the homepage, they are re-directed to the first page of results. Each page displays up to 5 results, and users can navigate between the pages by clicking the pagination buttons at the bottom of the window. Users may also search for results. The search method is case-insensitve, and will also return partial matches. User's search queries will be matched against the Title, Author, Genre and Year (of release) fields. If a book is not listed in the database, clients are welcome to submit their own entries. If the 'Title' or 'Author' fields are left blank, Sequelize will prevent the form from being submitted, and display a custom error message notifing the user of their mistake. Finally, users may also update any current entries listed in the library. As before, the same validation methods will be in place on the 'Title' and 'Author' fields, to ensure they are not left empty.",
+      "technologies": [
+        "Sequelize",
+        "Express",
+        "Node.js",
+        "Asynchronous Javascript"
+      ],
+      "live_link": "https://sql-library-manager-ja.herokuapp.com/",
+      "github_link": "https://github.com/jmaletto1/JS-TD-P8-SQL-Library-Manager",
+      "image_urls": [
+        "/static/images/sql-library-1200.jpg",
+        "/static/images/sql-library-550.jpg",
+        "/static/images/sql-library-search-550.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "project_name": "React Gallery App",
+      "description": "This lightweight and easy-to-use gallery application makes use of React to pull images from Flickr's Public API. The app provides 3 default search routes - Cats, Dogs & Gorillas. In addtion, users can search for a query of their choosing. In the event that a match is not found, the user is provided with a 'Not Found' message, and encouraged to search again!",
+      "technologies": [
+        "React",
+        "Asynchronous Programming",
+        "Basic Javascript",
+        "CSS & DOM Manipulation"
+      ],
+      "live_link": "https://react-gallery-app-johnny-a.herokuapp.com/",
+      "github_link": "https://github.com/jmaletto1/JS-TD-7-React-Gallery-App/tree/main/react-gallery",
+      "image_urls": [
+        "/static/images/react-gallery-1200.jpg",
+        "/static/images/react-gallery-500.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "project_name": "Public API Requests Gallery",
+      "description": "Many immensely popular sites, such as IMDB, Facebook & Twitter, provide data that can be displayed on external websites via the use of APIs. This project makes use of a public API to display 9 randomly selected users on to a webpage. The program allows you to search through the selected profiles, and launch a modal view of each user, by clicking directly on it’s thumbnail. This modal window provides far more detail on the selected user. From the modal window, the user can either close the window, or scroll backwards/forwards through the results.",
+      "technologies": [
+        "Asynchronous Programming",
+        "Promises",
+        "jQuery",
+        "Basic Javascript",
+        "CSS & DOM Manipulation"
+      ],
+      "live_link": "http://theruntrepreneur.co.uk/js/public-api/",
+      "github_link": "https://github.com/jmaletto1/JS-TD-P5-Public-API-Requests",
+      "image_urls": [
+        "/static/images/public-api-requests-1200.jpg",
+        "/static/images/public-api-requests-search-results-1200.jpg",
+        "/static/images/public-api-requests-550.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "project_name": "OOP Game Show App",
+      "description": "This fun “Phrase Hunters” game is a stylish, Javascript-based version of the classic Hangman game. The game selects a phrase at random, and displays the characters behind covered placeholders. Users can then either type or click the letters on the on-screen keyboard to make their selection. If correct, the relevant letters are revealed on the board, and the chosen letter is blocked from being re-used. If incorrect, the player loses a life. The player either completes the phrase before using 5 lives, resulting in a win, or loses if all 5 lives expire.",
+      "technologies": [
+        "Object-Oriented Javascript",
+        "jQuery",
+        "Basic Javascript",
+        "CSS & DOM Manipulation"
+      ],
+      "live_link": "http://theruntrepreneur.co.uk/js/game-show-app/",
+      "github_link": "https://github.com/jmaletto1/JS-TD-P4-OOP-Game-Show-App",
+      "image_urls": [
+        "/static/images/phrase-hunter-1200.jpg",
+        "/static/images/phrase-hunter-in-play-1200.jpg",
+        "/static/images/phrase-hunter-win-550.jpg",
+        "/static/images/phrase-hunter-lose-550.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "project_name": "Interactive Conference Registration Form",
+      "description": "This interactive form makes full use of Javascript & DOM manipulation to allow a user to sign up for an imaginary conference. The form makes use of the preventDefault() function to stop the user submitting the form unless all of the necessary fields have been submitted. It also performs checks on the Name, Email and Credit Card sections to ensure that the provided data is valid. The activities section provides a total cost of how many activities the user has signed up for, and prevents them from signing up for any breakout sessions that clash. The form also displays a more streamlined version if the client has Javascript disabled.",
+      "technologies": [
+        "Basic Javascript",
+        "jQuery",
+        "CSS & DOM Manipulation",
+        "HTML Form Elements"
+      ],
+      "live_link": "http://theruntrepreneur.co.uk/js/interactive-form/",
+      "github_link": "https://github.com/jmaletto1/JS-TD-P3-Interactive-Form",
+      "image_urls": [
+        "/static/images/interactive-form-1200.jpg",
+        "/static/images/interactive-form-550.jpg",
+        "/static/images/interactive-form-responses-550.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "project_name": "Data Pagination and Filtering Gallery",
+      "description": "Displaying large amounts of data, such as hundreds of user profiles, can easily overwhelm a user, which will most likely end up in them leaving the page. In this project, I have created a data pagination system that displays 9 users on a page, and displays a page navigation system at the bottom of the page, allowing users to traverse through the results set without being overwhelmed. This project also makes use of a search function, allowing users to find a specific result (or set of results) without having to crawl through each page.",
+      "technologies": ["Basic Javascript", "CSS & DOM Manipulation"],
+      "live_link": "http://theruntrepreneur.co.uk/js/data-pagination/",
+      "github_link": "https://github.com/jmaletto1/JS-TD-P2-Data-Pagination",
+      "image_urls": [
+        "/static/images/data-pagination-1200.jpg",
+        "/static/images/data-pagination-searches-1200.jpg",
+        "/static/images/data-pagination-550.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "project_name": "Random Quote Generator",
+      "description": "This program uses a range of Javascript syntax and data structures to build a Random Quote Generator. This program randomly displays a quote each time the user clicks a button, or after 5 seconds have passed.",
+      "technologies": ["Basic Javascript", "CSS & DOM Manipulation"],
+      "live_link": "http://theruntrepreneur.co.uk/js/random-quote-generator/",
+      "github_link": "https://github.com/jmaletto1/JS-TD-P1---Random-Quote-Generator",
+      "image_urls": [
+        "/static/images/random-quote-generator-1200.jpg",
+        "/static/images/random-quote-generator-550.jpg"
+      ]
+    }
+  ]
 }
